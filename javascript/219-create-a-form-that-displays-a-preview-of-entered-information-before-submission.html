@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Create a form that displays a preview of entered information before submission.</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style></style>
+</head>
+<body>
+<header><h1>Create a form that displays a preview of entered information before submission.</h1><p>JavaScript practical demonstration</p></header>
+<main>
+<div class="card">
+<nav><a href="../index.html">Home</a><a class="secondary" href="../index.html">Back to Programs</a></nav>
+</div>
+<div class="card"><input id="w" type="number" value="70"><input id="h" type="number" value="1.75"><button onclick="run()">Calculate BMI</button><p id="output"></p></div>
+</main>
+<footer>HTML • CSS • JavaScript Practical Programs</footer>
+<script>function run(){output.textContent='BMI = '+((+w.value)/(+h.value**2)).toFixed(2)}</script>
+</body>
+</html>

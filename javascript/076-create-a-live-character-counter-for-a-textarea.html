@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Create a live character counter for a textarea.</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style></style>
+</head>
+<body>
+<header><h1>Create a live character counter for a textarea.</h1><p>JavaScript practical demonstration</p></header>
+<main>
+<div class="card">
+<nav><a href="../index.html">Home</a><a class="secondary" href="../index.html">Back to Programs</a></nav>
+</div>
+<div class="card"><textarea id="txt" rows="5" oninput="run()"></textarea><p id="output">0 characters</p></div>
+</main>
+<footer>HTML • CSS • JavaScript Practical Programs</footer>
+<script>function run(){output.textContent=txt.value.length+' characters'}</script>
+</body>
+</html>

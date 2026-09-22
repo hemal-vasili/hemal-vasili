@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Create a stopwatch.</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style></style>
+</head>
+<body>
+<header><h1>Create a stopwatch.</h1><p>JavaScript practical demonstration</p></header>
+<main>
+<div class="card">
+<nav><a href="../index.html">Home</a><a class="secondary" href="../index.html">Back to Programs</a></nav>
+</div>
+<div class="card"><h2 id="clock">0.0 s</h2><button onclick="start()">Start</button> <button onclick="stop()">Stop</button> <button onclick="reset()">Reset</button></div>
+</main>
+<footer>HTML • CSS • JavaScript Practical Programs</footer>
+<script>let sw=0,timer;function start(){if(!timer)timer=setInterval(()=>{sw+=.1;clock.textContent=sw.toFixed(1)+' s'},100)}function stop(){clearInterval(timer);timer=null}function reset(){stop();sw=0;clock.textContent='0.0 s'}</script>
+</body>
+</html>

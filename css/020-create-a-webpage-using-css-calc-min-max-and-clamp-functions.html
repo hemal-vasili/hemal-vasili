@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Create a webpage using CSS calc(), min(), max(), and clamp() functions.</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+    .demo-ui{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:14px}
+    .demo-ui>*{padding:18px;background:white;border:1px solid #cbd5e1;border-radius:12px}
+    .calc{width:calc(100% - 60px);font-size:clamp(1rem,4vw,2.5rem);padding:max(15px,2vw);background:#e0e7ff}</style>
+</head>
+<body>
+<header><h1>Create a webpage using CSS calc(), min(), max(), and clamp() functions.</h1><p>CSS practical demonstration</p></header>
+<main>
+<div class="card">
+<nav><a href="../index.html">Home</a><a class="secondary" href="../index.html">Back to Programs</a></nav>
+</div>
+<div class="card"><div class="calc">calc(), min(), max(), clamp()</div></div>
+</main>
+<footer>HTML • CSS • JavaScript Practical Programs</footer>
+<script></script>
+</body>
+</html>

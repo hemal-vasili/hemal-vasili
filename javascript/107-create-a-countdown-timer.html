@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Create a countdown timer.</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style></style>
+</head>
+<body>
+<header><h1>Create a countdown timer.</h1><p>JavaScript practical demonstration</p></header>
+<main>
+<div class="card">
+<nav><a href="../index.html">Home</a><a class="secondary" href="../index.html">Back to Programs</a></nav>
+</div>
+<div class="card"><input id="n" type="number" value="10"><button onclick="start()">Start</button><h2 id="output"></h2></div>
+</main>
+<footer>HTML • CSS • JavaScript Practical Programs</footer>
+<script>let cd;function start(){clearInterval(cd);let x=+n.value;output.textContent=x;cd=setInterval(()=>{x--;output.textContent=x;if(x<=0)clearInterval(cd)},1000)}</script>
+</body>
+</html>

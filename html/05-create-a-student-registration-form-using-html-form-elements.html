@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Create a student registration form using HTML form elements.</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style></style>
+</head>
+<body>
+<header><h1>Create a student registration form using HTML form elements.</h1><p>HTML practical demonstration</p></header>
+<main>
+<div class="card">
+<nav><a href="../index.html">Home</a><a class="secondary" href="../index.html">Back to Programs</a></nav>
+</div>
+<div class="card"><form onsubmit="event.preventDefault();document.getElementById('msg').textContent='Registration submitted successfully!';"><label>Name</label><input required><label>Email</label><input type="email" required><label>Course</label><select><option>SCDS</option><option>Other</option></select><button>Register</button></form><p id="msg"></p></div>
+</main>
+<footer>HTML • CSS • JavaScript Practical Programs</footer>
+<script></script>
+</body>
+</html>

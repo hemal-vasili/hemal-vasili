@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Create a to-do list using localStorage.</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style></style>
+</head>
+<body>
+<header><h1>Create a to-do list using localStorage.</h1><p>JavaScript practical demonstration</p></header>
+<main>
+<div class="card">
+<nav><a href="../index.html">Home</a><a class="secondary" href="../index.html">Back to Programs</a></nav>
+</div>
+<div class="card"><input id="name" placeholder="Name"><button onclick="save()">Save</button><button onclick="load()">Load</button><button onclick="clearData()">Clear</button><p id="output"></p></div>
+</main>
+<footer>HTML • CSS • JavaScript Practical Programs</footer>
+<script>function save(){localStorage.setItem('assignmentName',name.value);output.textContent='Saved.'}function load(){output.textContent=localStorage.getItem('assignmentName')||'No saved value'}function clearData(){localStorage.removeItem('assignmentName');output.textContent='Deleted.'}</script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+
+*{box-sizing:border-box}
+body{margin:0;font-family:Inter,Arial,sans-serif;background:#f5f7fb;color:#18202a;line-height:1.6}
+header{background:linear-gradient(135deg,#111827,#334155);color:white;padding:28px 20px}
+header h1{margin:0 0 6px;font-size:clamp(1.5rem,3vw,2.3rem)}
+main{max-width:1100px;margin:28px auto;padding:0 18px}
+.card{background:white;border:1px solid #e5e7eb;border-radius:16px;padding:22px;margin-bottom:20px;box-shadow:0 8px 25px #0000000a}
+nav{display:flex;gap:10px;flex-wrap:wrap;margin-top:15px}
+nav a,.btn{display:inline-block;padding:9px 14px;border-radius:10px;background:#2563eb;color:white;text-decoration:none;border:0;cursor:pointer}
+nav a.secondary{background:#475569}
+button{padding:9px 14px;border:0;border-radius:9px;background:#2563eb;color:#fff;cursor:pointer}
+input,select,textarea{width:100%;padding:10px;border:1px solid #cbd5e1;border-radius:8px;margin:5px 0 12px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+.demo{padding:20px;background:#f8fafc;border:1px dashed #94a3b8;border-radius:12px}
+.badge{display:inline-block;padding:4px 9px;border-radius:999px;background:#e0e7ff;color:#3730a3}
+table{width:100%;border-collapse:collapse}th,td{padding:10px;border:1px solid #cbd5e1;text-align:left}
+pre{overflow:auto;background:#0f172a;color:#e2e8f0;padding:16px;border-radius:12px}
+footer{text-align:center;color:#64748b;padding:30px}

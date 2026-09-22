@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Create a tic-tac-toe game.</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style></style>
+</head>
+<body>
+<header><h1>Create a tic-tac-toe game.</h1><p>JavaScript practical demonstration</p></header>
+<main>
+<div class="card">
+<nav><a href="../index.html">Home</a><a class="secondary" href="../index.html">Back to Programs</a></nav>
+</div>
+<div class="card"><div id="board" style="display:grid;grid-template-columns:repeat(3,70px);gap:5px"></div><p id="output">Player X</p></div>
+</main>
+<footer>HTML • CSS • JavaScript Practical Programs</footer>
+<script>let turn='X';for(let i=0;i<9;i++){let b=document.createElement('button');b.style.height='70px';b.onclick=()=>{if(!b.textContent){b.textContent=turn;turn=turn==='X'?'O':'X';output.textContent='Player '+turn}};board.appendChild(b)}</script>
+</body>
+</html>

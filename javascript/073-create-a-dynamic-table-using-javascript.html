@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Create a dynamic table using JavaScript.</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style></style>
+</head>
+<body>
+<header><h1>Create a dynamic table using JavaScript.</h1><p>JavaScript practical demonstration</p></header>
+<main>
+<div class="card">
+<nav><a href="../index.html">Home</a><a class="secondary" href="../index.html">Back to Programs</a></nav>
+</div>
+<div class="card"><button onclick="addRow()">Add Row</button><table id="table"><tr><th>Name</th><th>Marks</th></tr></table></div>
+</main>
+<footer>HTML • CSS • JavaScript Practical Programs</footer>
+<script>let k=1;function addRow(){let r=table.insertRow();r.insertCell().textContent='Student '+k;r.insertCell().textContent=70+k++}</script>
+</body>
+</html>

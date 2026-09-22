@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Demonstrate querySelector() and querySelectorAll().</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style></style>
+</head>
+<body>
+<header><h1>Demonstrate querySelector() and querySelectorAll().</h1><p>JavaScript practical demonstration</p></header>
+<main>
+<div class="card">
+<nav><a href="../index.html">Home</a><a class="secondary" href="../index.html">Back to Programs</a></nav>
+</div>
+<div class="card"><p class="item">A</p><p class="item">B</p><button onclick="run()">Select</button><p id="output"></p></div>
+</main>
+<footer>HTML • CSS • JavaScript Practical Programs</footer>
+<script>function run(){output.textContent='Found '+document.querySelectorAll('.item').length+' matching elements.'}</script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Create a form with required-field validation.</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style></style>
+</head>
+<body>
+<header><h1>Create a form with required-field validation.</h1><p>JavaScript practical demonstration</p></header>
+<main>
+<div class="card">
+<nav><a href="../index.html">Home</a><a class="secondary" href="../index.html">Back to Programs</a></nav>
+</div>
+<div class="card"><form id="form"><input id="name" placeholder="Name" required><input id="email" type="email" placeholder="Email" required><input id="pass" type="password" minlength="6" placeholder="Password" required><button>Submit</button></form><p id="output"></p></div>
+</main>
+<footer>HTML • CSS • JavaScript Practical Programs</footer>
+<script>form.addEventListener('submit',e=>{e.preventDefault();output.textContent=form.checkValidity()?'Form submitted successfully!':'Please correct the form.'})</script>
+</body>
+</html>

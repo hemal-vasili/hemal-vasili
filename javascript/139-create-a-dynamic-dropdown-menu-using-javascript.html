@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Create a dynamic dropdown menu using JavaScript.</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style></style>
+</head>
+<body>
+<header><h1>Create a dynamic dropdown menu using JavaScript.</h1><p>JavaScript practical demonstration</p></header>
+<main>
+<div class="card">
+<nav><a href="../index.html">Home</a><a class="secondary" href="../index.html">Back to Programs</a></nav>
+</div>
+<div class="card"><select id="sel"></select><button onclick="add()">Add Option</button></div>
+</main>
+<footer>HTML • CSS • JavaScript Practical Programs</footer>
+<script>let n=1;function add(){let o=document.createElement('option');o.textContent='Option '+n++;sel.appendChild(o)}</script>
+</body>
+</html>

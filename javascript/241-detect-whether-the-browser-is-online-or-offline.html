@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Detect whether the browser is online or offline.</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style></style>
+</head>
+<body>
+<header><h1>Detect whether the browser is online or offline.</h1><p>JavaScript practical demonstration</p></header>
+<main>
+<div class="card">
+<nav><a href="../index.html">Home</a><a class="secondary" href="../index.html">Back to Programs</a></nav>
+</div>
+<div class="card"><h2 id="output"></h2></div>
+</main>
+<footer>HTML • CSS • JavaScript Practical Programs</footer>
+<script>function show(){output.textContent=navigator.onLine?'Online':'Offline'}show();addEventListener('online',show);addEventListener('offline',show)</script>
+</body>
+</html>
